@@ -1,4 +1,3 @@
-<!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +8,10 @@
 </head>
 <body>
     @include('components.navbar')
-
-    <div class="cmx-auto mt-4">
+    <main class="container mx-auto mt-4">
         @yield('content')
-    </div>
-
+    </main>
+    @include('components.footer')
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
